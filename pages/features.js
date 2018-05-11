@@ -3,5 +3,5 @@ import Navbar from '../components/Navbar';
 
 export default () => <div>
 	<Navbar/>
-	<p>index</p>
+	<p>features</p>
 </div>
