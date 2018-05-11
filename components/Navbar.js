@@ -22,8 +22,12 @@ export default () => <Navbar>
 		<Link href="/features" prefetch>
 			<NavbarItem>Features</NavbarItem>
 		</Link>
-		<NavbarItem>Pricing</NavbarItem>
-		<NavbarItem>Partners</NavbarItem>
+		<Link href="/pricing" prefetch>
+			<NavbarItem>Pricing</NavbarItem>
+		</Link>
+		<Link href="/partners" prefetch>
+			<NavbarItem>Partners</NavbarItem>
+		</Link>
 	</NavbarGroup>
 	<NavbarGroup>
 		<Link href="/" prefetch>
