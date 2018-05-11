@@ -10,11 +10,15 @@ const NavbarItem = styled.div`
 	text-transform: uppercase;
 	transition: border 0.18s;
 	font-size: 1.1rem;
+	cursor: pointer;
 	&:hover {
   		color: black;
   		border: 1px solid #333;
   		transition: border 0.2s;
   	}
+  	@media only screen and (max-width: 800px) {
+		margin: 0;
+	}
 `;
 
 export default NavbarItem;

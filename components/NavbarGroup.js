@@ -12,5 +12,12 @@ const NavbarGroup = styled.div`
 		margin-left: ${props => props.left ? '10%' : ''};
 		margin-right: ${props => props.right ? '10%' : ''};
 	}
+	@media only screen and (max-width: 1000px) {
+		margin: 0;
+		justify-content: space-around;
+	}
+	@media only screen and (max-width: 700px) {
+		width: 100%;
+	}
 `;
 export default NavbarGroup;

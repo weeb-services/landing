@@ -4,6 +4,7 @@ import NavbarGroup from './NavbarGroup';
 import NavbarItem from './NavbarItem';
 import NavbarLogo from './NavbarLogo';
 import NavbarLink from './NavbarLink';
+import Link from 'next/link';
 
 const Navbar = styled.nav`
 	display: flex;
@@ -11,15 +12,23 @@ const Navbar = styled.nav`
   	align-items: center;
   	padding: 10px 0;
   	box-shadow: 0 8px 10px 0 rgba(0,0,0,.07);
+  	@media only screen and (max-width: 700px) {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
 `;
 export default () => <Navbar>
 	<NavbarGroup left>
-		<NavbarItem>Features</NavbarItem>
+		<Link href="/features" prefetch>
+			<NavbarItem>Features</NavbarItem>
+		</Link>
 		<NavbarItem>Pricing</NavbarItem>
 		<NavbarItem>Partners</NavbarItem>
 	</NavbarGroup>
 	<NavbarGroup>
-		<NavbarLogo/>
+		<Link href="/" prefetch>
+			<NavbarLogo/>
+		</Link>
 	</NavbarGroup>
 	<NavbarGroup right>
 		<NavbarItem>Blog</NavbarItem>
