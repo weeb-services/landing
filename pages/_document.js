@@ -15,6 +15,7 @@ export default class WeebDocument extends Document {
 			<Head>
 				<title>Weeb Services Landing</title>
 				<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+				<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
 				<link href="/static/global.css" rel="stylesheet"/>
 				<meta property="og:title" content="Weeb.sh Landing"/>
 				<meta property="og:url" content="https://weeb.sh/"/>

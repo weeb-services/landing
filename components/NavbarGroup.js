@@ -5,8 +5,8 @@ const NavbarGroup = styled.div`
 	display: flex;
 	align-items: center;
 	@media only screen and (min-width: 1200px) {
-		margin-left: ${props => props.left ? '20%' : ''};
-		margin-right: ${props => props.right ? '20%' : ''};
+		margin-left: ${props => props.left ? '15%' : ''};
+		margin-right: ${props => props.right ? '15%' : ''};
 	}
 	@media only screen and (max-width: 1199px) {
 		margin-left: ${props => props.left ? '10%' : ''};
@@ -16,8 +16,8 @@ const NavbarGroup = styled.div`
 		margin: 0;
 		justify-content: space-around;
 	}
-	@media only screen and (max-width: 700px) {
-		width: 100%;
+	@media only screen and (max-width: 699px) {
+		flex-direction: column;
 	}
 `;
 export default NavbarGroup;

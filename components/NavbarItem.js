@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NavbarItem = styled.div`
-	color: grey;
+	color: #c9c9c9;
 	padding: 10px 16px;
-	border: 1px solid rgba(0, 0, 0, 0);
 	border-radius: 5%;
 	margin : 0 6px;
 	text-transform: uppercase;
@@ -12,12 +11,20 @@ const NavbarItem = styled.div`
 	font-size: 1.1rem;
 	cursor: pointer;
 	&:hover {
-  		color: black;
-  		border: 1px solid #333;
-  		transition: border 0.2s;
+  		color: white;
+  		transition: color 0.2s;
   	}
   	@media only screen and (max-width: 800px) {
 		margin: 0;
+	}
+	@media only screen and (max-width: 699px) {
+		margin: 5px 0;
+		border: none;
+		padding: 0;
+		&:hover {
+  			color: white;
+  			border: none;
+  		}
 	}
 `;
 
