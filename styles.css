@@ -10,6 +10,9 @@
 body {
     background: #333333;
 }
+strong {
+    font-weight: bold;
+}
 div.container {
     min-height: calc(100vh - 8rem);
     background: #333333;
@@ -19,6 +22,7 @@ div.container {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    text-align-last: center;
 }
 
 @media (min-width: 576px) {
@@ -92,6 +96,9 @@ div.container.privacy h4 {
 }
 div.container.privacy p:last-of-type {
     margin-bottom: 4rem;
+}
+#text-muted {
+    color: gray;
 }
 
 footer.footer {
